@@ -3,7 +3,7 @@ function solution(N) {
   const digits = binary.split("");
   let binaryGap = 0;
   let count = 0;
-  let startCounting = false;
+  let isCounting = false;
   for (let i = 0; i < digits.length; i++) {
     const currentDigit = Number(digits[i]);
     if (currentDigit === 1) {
@@ -11,11 +11,10 @@ function solution(N) {
         binaryGap = count;
       }
       count = 0;
-      startCounting = true;
-      continue;
+      isCounting = true;
     }
     if (currentDigit === 0) {
-      if (startCounting) count++;
+      if (isCounting) count++;
     }
   }
   return binaryGap;
