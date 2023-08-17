@@ -1,4 +1,3 @@
-
 ```sh
 # input.txt
 W
@@ -13,6 +12,7 @@ NSEEEEWWNWNWSWEN
 
 Each line represents a person moving in compass directions (N, E, S, W).
 Eg: `NSN` represents a person moving
+
 ```
 one step N
 one step S
@@ -28,8 +28,8 @@ Example
 W => false
 WE => true
 ```
-With the above input, the total count would be (1) person ending up in the same position, and the resulting file `answer.txt` has the line `count: 1`
 
+With the above input, the total count would be (1) person ending up in the same position, and the resulting file `answer.txt` has the line `count: 1`
 
 EXTENSION
 
@@ -43,4 +43,5 @@ W
 WE
 NES
 ```
+
 Expected outcome: a file `answer.txt` that has 1 line with the word `true`.
